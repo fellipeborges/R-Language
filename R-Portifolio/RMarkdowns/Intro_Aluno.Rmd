@@ -1,0 +1,10 @@
+```{r}
+aluno.nome = "Fellipe"
+aluno.sobrenome = "Borges do Nascimento"
+aluno.rm = "330396"
+```
+
+```{r}
+print(paste("Aluno:", aluno.nome, aluno.sobrenome))
+print(paste("RM:", aluno.rm))
+```

@@ -1,0 +1,16 @@
+### Fazendo download de um arquivo externo
+
+##### Cria o diretório /data/ caso não exista
+```{r}
+if(!file.exists('data')){
+  dir.create('data')
+}
+```
+
+##### Faz o download
+```{r}
+file.url = 'http://www.bcb.gov.br/pec/Indeco/Port/IE1-04.xlsx'
+file.local = file.path('./data', basename(file.url))
+download.file(url = file.url, destfile = file.local , mode='wb')
+print(paste("Arquivo baixado em", file.local))
+```

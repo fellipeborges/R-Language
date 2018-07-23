@@ -1,0 +1,27 @@
+### Amostra (sample)
+
+##### Inicializa a semente e define a amostra inicial
+```{r}
+set.seed(18)
+amostra = c("T", "R", "I", "A", "N", "G", "U", "L", "O", "S")
+```
+
+##### Sem repetição
+```{r}
+sample(x = amostra, replace = FALSE) 
+```
+
+##### Com repetição
+```{r}
+sample(x = amostra, replace = TRUE)
+```
+
+##### Força o tamanho da amostra em 5
+```{r}
+sample(x = amostra, size = 5)
+```
+
+##### Informa a probabilidade de cada item da amostra
+```{r}
+sample(x = amostra, size = 10, replace = TRUE, prob = c(1,1,5,1,1,1,1,1,1,5)) 
+```

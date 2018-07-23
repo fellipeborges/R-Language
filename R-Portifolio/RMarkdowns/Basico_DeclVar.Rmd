@@ -1,0 +1,18 @@
+### Declaração básica de variáveis
+##### Declaração de variáveis de diversos tipos diferentes.
+```{r}
+a = 1.1 #numeric
+b = "X" #character
+c = 1L #integer
+d = FALSE #logical
+e = T #logical
+```
+
+##### Imprimindo os tipos das variáveis
+```{r}
+class(a)
+class(b)
+class(c)
+class(d)
+class(e)
+```

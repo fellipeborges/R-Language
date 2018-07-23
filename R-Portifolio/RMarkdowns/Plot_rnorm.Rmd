@@ -1,0 +1,12 @@
+### rnorm
+
+#Número aleatórios seguindo uma distribuição normal
+```{r}
+#Dados principais - 100 itens, média = 0, desvio padrao = 1
+x = rnorm(n=100,mean=0,sd=1) 
+
+#Erros para ruído - 100 itens, média = 0, desvio padrao = 2
+e = rnorm(n=100,mean=0,sd=2) 
+y = 0.5 + 2.0 * x + e
+plot_ly(x = x, y = y, type='scatter', mode='markers')
+```

@@ -1,0 +1,9 @@
+### Senos
+```{r}
+plot(sin(seq(from=0, to=2*pi, length.out = 70)), type='o')
+```
+
+### Cossenos
+```{r}
+plot(sin(seq(from=0, to=pi, length.out = 70)), type='o')
+```

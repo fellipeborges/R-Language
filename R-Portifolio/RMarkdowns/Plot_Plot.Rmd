@@ -1,0 +1,26 @@
+### Plot Básico
+
+##### Com pontos e linhas
+```{r}
+x =  -50:50
+plot( x = x, y = x**2, type='b') #com pontos e linhas
+```
+
+##### Histograma
+```{r}
+plot( x = x, y = x**2, type='h') #histograma
+```
+
+
+##### Steps
+```{r}
+plot( x = x, y = x**2, type='s') #steps
+```
+
+##### Regressão linear com linha de tendência
+```{r}
+y.tend = lm(data = cars, formula = dist ~speed)$coefficients
+x = cars$speed
+plot(cars)
+lines(x = x, y = cbind(1, x) %*%  y.tend, type = 'l', col='blue')
+```

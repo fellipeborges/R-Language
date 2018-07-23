@@ -1,0 +1,29 @@
+### Boxplot com avaliação mensal e comparativa
+
+##### Por ozônio
+```{r}
+boxplot(Ozone ~ Month, data = airquality,
+        main = "Avaliação Mensal e Comparativa",
+        xlab = "Mês", ylab = "Ozônio")
+```
+
+##### Por temperatura
+```{r}
+boxplot(Temp ~ Month, data = airquality,
+        main = "Avaliação Mensal e Comparativa",
+        xlab = "Mês", ylab = "Temperatura")
+```
+
+##### Por vento
+```{r}
+boxplot(Wind ~ Month, data = airquality,
+        main = "Avaliação Mensal e Comparativa",
+        xlab = "Mês", ylab = "Vento")
+```
+
+##### Por radiação solar
+```{r}
+boxplot(Solar.R ~ Month, data = airquality,
+        main = "Avaliação Mensal e Comparativa",
+        xlab = "Mês", ylab = "Radiação Solar")
+```

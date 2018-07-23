@@ -1,0 +1,11 @@
+### Lubridate
+
+##### Trabalhando com datas
+```{r}
+ymd("20180912") #Cria uma data a partir de uma string no formato yyyymmdd
+dmy("12/09/2018") #Cria uma data a partir de uma string no formato dd/mm/yyyy
+dseconds(260) #Criar uma duration com 260 segundos
+dminutes(260)/60 #Criar uma duration com 260 minutos e divida-a por 60
+ddays(1) - dminutes(60) #Criar uma duration de 1 dia e subtraia uma duration de 60 minutos
+ddays(12)+dhours(5)+dminutes(10) #Criar uma duration de 12 dias, 5 horas e 10 minutos
+```

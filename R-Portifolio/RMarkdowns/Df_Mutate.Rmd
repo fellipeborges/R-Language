@@ -1,0 +1,6 @@
+##### Criando nova coluna no dataframe com mutate
+```{r}
+mtcars %>% 
+  mutate(novo.qsec = as.integer(qsec)) %>% 
+  head(10)
+```

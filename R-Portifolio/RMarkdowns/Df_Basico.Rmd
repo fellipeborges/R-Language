@@ -1,0 +1,16 @@
+### Ações básicas em um dataframe
+
+##### Resumo
+```{r}
+summary(mtcars) 
+```
+
+##### Primeiros x registros
+```{r}
+head(mtcars, 5) 
+```
+
+##### Últimos x registros
+```{r}
+tail(mtcars, 5) 
+```

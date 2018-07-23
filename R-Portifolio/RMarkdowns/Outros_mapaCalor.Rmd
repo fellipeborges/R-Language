@@ -1,0 +1,7 @@
+### Mapa de calor
+
+```{r}
+set.seed(18)
+dados = matrix(rnorm(400), nrow = 40)
+image(x = 1:10, y = 1:40, z = t(dados)[,40:1])
+```

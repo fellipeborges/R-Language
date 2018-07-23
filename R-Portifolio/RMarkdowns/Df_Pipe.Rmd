@@ -1,0 +1,14 @@
+##### Filtro usando o Pipe
+```{r}
+mtcars %>% 
+  filter(cyl == 6) -> sixcylcars
+head(sixcylcars)
+```
+
+
+##### Ordenando o dataset usando o Pipe
+```{r}
+mtcars %>% 
+  arrange(desc(gear)) %>% 
+  head(10)
+```

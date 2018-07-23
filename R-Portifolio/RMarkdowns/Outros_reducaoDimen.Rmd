@@ -1,0 +1,37 @@
+### Redução de dimensionalidade
+
+##### Reduzindo 2D para 1D
+```{r}
+set.seed(1909)
+x = 1:10 + rnorm(10 )
+y = (1:10*2) - rnorm(10, mean = 2 )
+plot(x=x, y=y, pch=4)
+cor(x=x, y=y)
+```
+
+##### Filtro de baixa variância
+```{r}
+set.seed(1909)
+items = 100
+a = rnorm(items, mean = 2, sd = 20 )
+b = rnorm(items, mean = 2, sd = 20 )
+c = a * rnorm(items, mean = 2, sd = 1 )
+d = runif(items, min=0.4, max = 14)
+e = runif(items, min=0.4, max = 140)
+e = sample(size=items, x = d[1:5], replace = T )
+df = data.frame(a, b, c, d, e)
+```
+
+##### Filtro de alta correlação
+```{r}
+set.seed(1909)
+x = 1:items + rnorm(items )
+y = (1:items*2) - rnorm(items, mean = 2 )
+plot(x=x, y=y)
+cor(x=x, y=y)
+```
+
+##### Análise de correlação
+```{r}
+cor(df)
+```

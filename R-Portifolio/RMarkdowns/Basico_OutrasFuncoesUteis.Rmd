@@ -1,0 +1,50 @@
+### Outras Funções Úteis
+```{r}
+#Mostra o tipo de uma variável
+x = "x"
+class(x) 
+```
+
+```{r}
+#mostra o diretório de trabalho
+getwd() 
+```
+
+```{r}
+#configura o diretório de trabalho
+setwd('C:\\') 
+```
+
+```{r}
+#configura o seed para randomizações
+set.seed(1) 
+```
+
+```{r}
+#mostra o environment atual
+environment() 
+```
+
+##### Sequências
+```{r}
+seq(5, 10, length.out = 30) #Sequência com 30 valores entre 5 e 10
+pi:10 #Vai de 3.141593 até o valor antes de 10 / retorna números tipo real
+10:pi #Começa em 10 e diminui pi / retorna números tipo inteiro
+```
+
+##### Valores especiais no R
+```{r}
+#Definindo
+v_na = NA
+v_nan = NaN
+v_inf = Inf
+v_infneg = -Inf
+v_null = NULL
+
+#Para checar
+is.na(v_na)
+is.nan(v_nan)
+is.null(v_null)
+is.infinite(v_inf)
+is.infinite(v_infneg)
+```

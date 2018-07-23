@@ -1,0 +1,36 @@
+### Matrizes
+##### Criando uma matriz básica
+```{r}
+vet01 = c("A","B","C","D","E","F","G","H","I") #Cria um vetor com 9 valores
+matrix( vet01 , nrow = 3) #Cria a matriz com o vetor e 3 linhas (distribuição por colunas)
+matrix( vet01 , nrow = 3, byrow = T) #Matriz com a distribuição por linhas
+```
+
+##### Dando nomes às colunas e linhas do vetor
+```{r}
+vec = matrix( vet01 , nrow = 3)
+colnames(vec) <- c("COL1", "COL2", "COL3")
+rownames(vec) <- c("ROW1", "ROW2", "ROW3")
+vec
+```
+
+##### Exemplo de criação de uma matriz 3x3 com os valores 1 e 2 nos elementos, alternadamente.
+```{r}
+M1 = matrix(1:2, nrow=3, ncol=3)
+M1
+```
+
+##### Multiplicação de Matrizes
+```{r}
+M2 = matrix(1:2, nrow=2, ncol=3)
+M3 = matrix(2:3, nrow=3, ncol=2)
+M2 %*% M3
+M3 %*% M2 #o resultado de multiplicação de matrizes é diferente quando se inverte as matrizes
+```
+
+##### Mostra o tamanho das matrizes
+```{r}
+dim(M2)
+dim(M3)
+#M1 == M2 //não permite comparar porque tem tamanhos diferentes
+```
